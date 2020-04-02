@@ -13,11 +13,12 @@ const Stack = createStackNavigator();
 export default function App() {
   return (
     <>
-      <StatusBar barStyle="light-content" />
+      <StatusBar barStyle="light-content" backgroundColor="#f4511e" />
       <NavigationContainer>
         <Stack.Navigator
           initialRouteName="Main"
           screenOptions={{
+            animationTypeForReplace: 'pop',
             headerStyle: {
               backgroundColor: '#f4511e',
             },
@@ -28,13 +29,11 @@ export default function App() {
               fontWeight: 'bold',
             },
           }}>
-          <Stack.Screen name="Main" component={Main} />
+          <Stack.Screen name="Usuários" component={Main} />
           <Stack.Screen
             name="User"
             component={User}
-            options={{
-              title: 'Usuários',
-            }}
+            options={({route}) => ({title: route.params.name})}
           />
         </Stack.Navigator>
       </NavigationContainer>

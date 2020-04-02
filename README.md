@@ -108,5 +108,13 @@ if (__DEV__) {
 
 routes 
 
+https://reactnavigation.org/docs/getting-started
 yarn add react-navigation
+
+
+styled-components
+
+yarn add styled-components
+
+
 
