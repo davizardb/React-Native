@@ -4,7 +4,7 @@ import {Text, Button} from 'react-native';
 
 export default function App() {
   const [dino, setDino] = useState(true);
-  const [count, setCount] = useState(true);
+  const [count, setCount] = useState(0);
 
   function handleDino() {
     dino === false ? setDino(true) : setDino(false);

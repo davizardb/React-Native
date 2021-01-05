@@ -36,7 +36,7 @@ export default class Main extends Component {
     const users = await AsyncStorage.getItem('users');
 
     if (users) {
-      this.setState({users: JSON.parse(users)});
+      this.setState({users: JSON.parse([users])});
     }
   }
 
