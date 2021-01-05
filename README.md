@@ -9,14 +9,14 @@
 
 Para instalar qualquer projeto, siga estas etapas:
 
-Clone o repositório
+1.Clone o repositório
 
-Instale as dependências do `package.json` dentro da pasta do projeto:
+2.Instale as dependências do `package.json` dentro da pasta do projeto:
 ```
 npm install ou yarn install
 ```
 
-Execute os instaladores do `react-native`:
+3.Execute os instaladores do `react-native`:
 ```
 npx react-native start e npx react-native run-android
 ```
