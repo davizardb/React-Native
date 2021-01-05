@@ -6,8 +6,8 @@
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/iuricode/README-template?style=for-the-badge)
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/iuricode/README-template?style=for-the-badge)
 
-<div style="text-align:center">
-  <img src="screen.jpeg" width="25%"  alt="tela da aplicação"/>
-</div>
+<p align="center">
+  <img src="screen.jpeg" width="25%"  alt="tela da aplicação">
+</p>
 
 > Copia da calculadora do Mac, projeto feito pela Cod3r.
