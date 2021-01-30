@@ -5,4 +5,4 @@
   <img src="screen02.jpg" width="25%"  alt="tela da aplicação">
 </p>
 
-> Pequeno componente pensando em resolver a ausência da tag <span/> dentro do React-Native.
+> Pequeno componente pensando em resolver a ausência da tag span dentro do React-Native.
