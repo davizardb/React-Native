@@ -7,16 +7,21 @@ import * as Font from "expo-font";
 import ReduxThunk from "redux-thunk";
 // import { composeWithDevTools } from "redux-devtools-extension";
 
+import { LogBox } from "react-native";
+LogBox.ignoreLogs(["Setting a timer for a long period of time, i.e."]);
+
 import productsReducer from "./store/reducers/productsReducer";
 import cartReducer from "./store/reducers/cartReducer";
 import ordersReducer from "./store/reducers/ordersReducer";
-import ShopNavigator from "./navigation/ShopNavigator";
+import authReducer from "./store/reducers/authReducer";
+import NavigationContainer from "./navigation/NavigationContainer";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 const rootReducer = combineReducers({
   products: productsReducer,
   cart: cartReducer,
   orders: ordersReducer,
+  auth: authReducer,
 });
 
 const store = createStore(rootReducer, applyMiddleware(ReduxThunk));
@@ -44,7 +49,7 @@ export default function App() {
   return (
     <Provider store={store}>
       <SafeAreaView style={{ flex: 1 }}>
-        <ShopNavigator />
+        <NavigationContainer />
       </SafeAreaView>
     </Provider>
   );
